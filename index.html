@@ -107,7 +107,17 @@
 
     <div class="card">
       <h3>Affinity Diagram</h3>
-      <img src="images/affinity_diagram1.jpg" alt="Affinity Diagram" />
+      <img
+        src="images/affinity_diagram1.jpg"
+        alt="Affinity Diagram"
+        onerror="this.style.display='none'; document.getElementById('affinity-fallback').style.display='block';"
+        style="max-width:100%; height:auto; border-radius:10px; border:1px solid #eee; box-shadow:0 6px 18px rgba(0,0,0,0.04);"
+      />
+      <p id="affinity-fallback" style="display:none; margin-top:8px;">
+        <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">
+          View full Affinity Diagram (PDF)
+        </a>
+      </p>
       <p style="font-size:14px; margin-top:10px;">
         This Affinity Diagram organizes ideas for the student productivity app,
         including product ideas, hurdles, social media management,
@@ -150,6 +160,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
